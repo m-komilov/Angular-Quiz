@@ -1,4 +1,18 @@
 .welcome {
     border: 1px solid #fff;
     border-radius: 10px;
+    .rules {
+        li {
+            background-color: rgba(255, 255, 255, .4);
+        }
+    }
+
+    .btn-lg {
+        color: #000;
+        border:2px solid;
+        border-color: rgb(150, 229, 248);
+        background-color: #ffcfdf;
+        background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    }
+
 }

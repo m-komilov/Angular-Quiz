@@ -1,0 +1,14 @@
+.for-img img {
+    width: 8%;
+}
+.font-text {
+    font-family: monospace ;
+}
+
+li {
+    cursor: pointer;
+
+    &:hover{
+        background: #56f9ff;
+    }
+}
