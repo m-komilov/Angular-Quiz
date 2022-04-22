@@ -50,6 +50,7 @@ export class QuestionComponent implements OnInit {
     this.currentQuestion = 0
     this.points = 0
     this.counter = 60
+    this.progress = "0"
   }
 
   answer(currentQno: number, option: any){
@@ -57,11 +58,16 @@ export class QuestionComponent implements OnInit {
       this.points += 10
       this.correctAnswer++
       this.currentQuestion++
+      this.resetCounter()
+      this.getProgressPercent()
     }
     else {
-      this.points -=10
+      
       this.currentQuestion++
       this.inCorrectAnswer++
+      this.resetCounter()
+      this.getProgressPercent()
+      this.points -=10
     }
   }
 
@@ -90,6 +96,11 @@ export class QuestionComponent implements OnInit {
     this.stopCounter()
     this.counter = 60
     this.startCounter()
+  }
+
+  getProgressPercent() {
+    this.progress = ((this.currentQuestion/this.questionList.length)*100).toString()
+    return this.progress
   }
 
 
