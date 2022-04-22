@@ -21,10 +21,10 @@ export class WelcomeComponent implements OnInit {
       alert("Please ente your name")
       this.routeGame = "welcome"
     }
-    else {
-      this.routeGame = "question"
-      localStorage.setItem("name", this.nameKey.nativeElement.value)
-    }
+  
+    this.routeGame = "question"
+    localStorage.setItem("name", this.nameKey.nativeElement.value)
+  
     
   }
 
