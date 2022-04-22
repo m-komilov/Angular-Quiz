@@ -9,16 +9,23 @@ export class WelcomeComponent implements OnInit {
 
   @ViewChild('name') nameKey !: ElementRef
 
+  public routeGame: string = ""
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
   startGame() {
-    if (this.nameKey.nativeElement.value === ""){
+    if (this.nameKey.nativeElement.value.trim() === ""){
       alert("Please ente your name")
+      this.routeGame = "welcome"
     }
-    localStorage.setItem("name", this.nameKey.nativeElement.value)
+    else {
+      this.routeGame = "question"
+      localStorage.setItem("name", this.nameKey.nativeElement.value)
+    }
+    
   }
 
 }

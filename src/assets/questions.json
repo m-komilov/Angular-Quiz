@@ -1,0 +1,58 @@
+{
+    "question" : [
+        {
+            "questrionText": "What is your name?",
+            "options": [
+                {
+                    "text": "Muhammad Abdulloh",
+                    "correct": true
+                },
+                {
+                    "text":"Muhammad"
+                },
+                {
+                    "text":"Muhammad Ali"
+                },
+                {
+                    "text": "Abdulloh"
+                }
+            ]
+        },
+        {
+            "questrionText": "What is your job?",
+            "options": [
+                {
+                    "text": "Programmer",
+                    "correct": true
+                },
+                {
+                    "text":"Recruiter"
+                },
+                {
+                    "text":"Tester"
+                },
+                {
+                    "text": "I don't work"
+                }
+            ]
+        },
+        {
+            "questrionText": "Where are you from?",
+            "options": [
+                {
+                    "text": "Uzbekistan",
+                    "correct": true
+                },
+                {
+                    "text":"Russia"
+                },
+                {
+                    "text":"Egypt"
+                },
+                {
+                    "text": "Turkey"
+                }
+            ]
+        }
+    ]
+}
