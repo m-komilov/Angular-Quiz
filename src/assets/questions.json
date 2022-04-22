@@ -1,11 +1,11 @@
 {
     "question" : [
         {
-            "questrionText": "What is your name?",
+            "questionText": "What is your name?",
             "options": [
                 {
                     "text": "Muhammad Abdulloh",
-                    "correct": true
+                    "currect": true
                 },
                 {
                     "text":"Muhammad"
@@ -19,11 +19,11 @@
             ]
         },
         {
-            "questrionText": "What is your job?",
+            "questionText": "What is your job?",
             "options": [
                 {
                     "text": "Programmer",
-                    "correct": true
+                    "currect": true
                 },
                 {
                     "text":"Recruiter"
@@ -32,16 +32,16 @@
                     "text":"Tester"
                 },
                 {
-                    "text": "I don't work"
+                    "text": "unemployeed"
                 }
             ]
         },
         {
-            "questrionText": "Where are you from?",
+            "questionText": "Where are you from?",
             "options": [
                 {
                     "text": "Uzbekistan",
-                    "correct": true
+                    "currect": true
                 },
                 {
                     "text":"Russia"

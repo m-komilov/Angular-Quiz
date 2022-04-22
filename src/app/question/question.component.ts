@@ -8,18 +8,22 @@ import { QuestionService } from '../service/question.service';
 })
 export class QuestionComponent implements OnInit {
 
-  public name: string = "";
+  public name: string = ""
+  public questionList: any = []
+  public currentQuestion: number = 0
 
   constructor(private questionService: QuestionService) { }
 
   ngOnInit(): void {
     this.name = localStorage.getItem("name")!
+    this.getAllQuestions()
   }
 
   getAllQuestions() {
     this.questionService.getQuestionJson()
     .subscribe( res => {
-      console.log(res.question);
+      console.log(res)
+      this.questionList = res.question
     })
   }
 
